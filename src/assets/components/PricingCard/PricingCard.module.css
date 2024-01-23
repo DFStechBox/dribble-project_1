@@ -1,25 +1,47 @@
 .card {
-  max-width: 200px;
+  max-width: 250px;
   background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  --price-theme: #f2746dff;
 }
 
 .card__wrapper {
   width: 90%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 40px;
+  padding: 20px 10px;
 }
 
 .card__label {
   color: black;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .card__image {
   max-width: 40px;
   width: 100%;
+  margin-top: 40px;
 }
 
-.card__priceLabel {
+.card__price-label {
   margin-top: 20px;
   text-align: center;
+  font-size: 1.3rem;
+  color: var(--price-theme);
+  font-family: Poppins;
+}
+
+.card__benefits-label {
+  color: var(--price-theme);
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.center-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
