@@ -50,11 +50,12 @@
   letter-spacing: 0.1rem;
 }
 .card__benefit-icon {
-  width: 15px;
-  height: 15px;
-  padding: 0 2px;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+  margin-right: 2px;
   border-radius: 50%;
-  background-color: var(--price-theme);
+  background-color: color-mix(in srgb, var(--price-theme), white 20%);
 }
 
 .center-vertical {
