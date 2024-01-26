@@ -20,9 +20,32 @@ function PricingCard({ label, priceLabel, image, imageAlt }: Props) {
           Every thing in Free, Plus
         </span>
         <ul className={styles.card__benefits}>
-          <li className={styles.card__benefit}>Up to 10 users</li>
-          <li className={styles.card__benefit}>Email Support, Call Support</li>
-          <li className={styles.card__benefit}>1 Year Access</li>
+          <li className={styles.card__benefit}>
+            <img
+              alt="check"
+              className={styles["card__benefit-icon"]}
+              src="/icons/check.png"
+            />
+            Up to 10 users
+          </li>
+          <li className={styles.card__benefit}>
+            {" "}
+            <img
+              alt="check"
+              className={styles["card__benefit-icon"]}
+              src="/icons/check.png"
+            />
+            Email Support, Call Support
+          </li>
+          <li className={styles.card__benefit}>
+            {" "}
+            <img
+              alt="check"
+              className={styles["card__benefit-icon"]}
+              src="/icons/check.png"
+            />
+            1 Year Access
+          </li>
         </ul>
         <button className={styles.card__button}>Choose</button>
       </div>
