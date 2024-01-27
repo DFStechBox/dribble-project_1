@@ -2,12 +2,13 @@ import styles from "./PricingCard.module.css";
 
 interface Props {
   label: string;
-  priceLabel: string;
+  price: string;
+  duration: string;
   image: string;
   imageAlt: string;
 }
 
-function PricingCard({ label, priceLabel, image, imageAlt }: Props) {
+function PricingCard({ label, price, duration, image, imageAlt }: Props) {
   return (
     <div className={styles.card}>
       <div className={`${styles.card__wrapper} center-vertical`}>
@@ -15,12 +16,15 @@ function PricingCard({ label, priceLabel, image, imageAlt }: Props) {
         <div>
           <img className={styles.card__image} src={image} alt={imageAlt} />
         </div>
-        <span className={styles["card__price-label"]}>{priceLabel}</span>
+        <div className={styles["card__price-label"]}>
+          <span className={styles["card__price-amount"]}>{price}</span>
+          <span className={styles["card__price-duration"]}>{duration}</span>
+        </div>
         <span className={styles["card__benefits-label"]}>
           Every thing in Free, Plus
         </span>
         <ul className={styles.card__benefits}>
-          <li className={styles.card__benefit}>
+          <li className={`${styles.card__benefits} center-horizontal`}>
             <img
               alt="check"
               className={styles["card__benefit-icon"]}
@@ -28,7 +32,7 @@ function PricingCard({ label, priceLabel, image, imageAlt }: Props) {
             />
             Up to 10 users
           </li>
-          <li className={styles.card__benefit}>
+          <li className={`${styles.card__benefits} center-horizontal`}>
             {" "}
             <img
               alt="check"
@@ -37,7 +41,7 @@ function PricingCard({ label, priceLabel, image, imageAlt }: Props) {
             />
             Email Support, Call Support
           </li>
-          <li className={styles.card__benefit}>
+          <li className={`${styles.card__benefits} center-horizontal`}>
             {" "}
             <img
               alt="check"
