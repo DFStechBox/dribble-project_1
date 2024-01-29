@@ -7,6 +7,21 @@
   --price-theme-darker: #d43533;
 }
 
+.card--startup {
+  --price-theme: #5a5679;
+  --price-theme-darker: #241f46;
+}
+
+.card--pro {
+  --price-theme: #f2746dff;
+  --price-theme-darker: #d43533;
+}
+
+.card--enterprise {
+  --price-theme: #f2746dff;
+  --price-theme-darker: #d43533;
+}
+
 .card__wrapper {
   width: 90%;
   margin: 0 auto;
@@ -88,4 +103,6 @@
   text-transform: uppercase;
   border: 2px solid var(--price-theme-darker);
   margin-top: 20px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
 }
